@@ -125,7 +125,7 @@ always @(posedge clock) begin
 
 			cpustate[`CPUEXEC]: begin
 				// We decide on the nextPC in EXEC
-				nextPC <= PC + 4;
+				nextPC <= PC + 32'd4;
 
 				// Set this up at the appropriate time
 				// so that the write happens after
