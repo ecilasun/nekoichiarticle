@@ -36,14 +36,14 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPOutputRepo" Val="/home/engin/nekotutorial/part7/nekotutorial.cache/ip"/>
+    <Option Name="IPOutputRepo" Val="/home/engin/nekotutorial/part8/nekotutorial.cache/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
-    <Option Name="IPUserFilesDir" Val="$PPRDIR/../part7/nekotutorial.ip_user_files"/>
-    <Option Name="IPStaticSourceDir" Val="$PPRDIR/../part7/nekotutorial.ip_user_files/ipstatic"/>
+    <Option Name="IPUserFilesDir" Val="$PPRDIR/../part8/nekotutorial.ip_user_files"/>
+    <Option Name="IPStaticSourceDir" Val="$PPRDIR/../part8/nekotutorial.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="arty-a7-100"/>
     <Option Name="WTXSimLaunchSim" Val="34"/>
