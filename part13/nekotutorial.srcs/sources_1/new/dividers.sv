@@ -1,13 +1,13 @@
 `timescale 1ns / 1ps
 
 module DIVU(
-    input wire [31:00] dividend,
-    input wire [31:00] divisor,
-    input wire start,
-    input wire clk,
-    input wire reset,
-    output wire [31:00] quotient,
-    output wire [31:00] remainder,
+    input [31:00] dividend,
+    input [31:00] divisor,
+    input start,
+    input clk,
+    input reset,
+    output [31:00] quotient,
+    output [31:00] remainder,
     output logic busy);
 
 wire ready;
@@ -51,22 +51,22 @@ end
 endmodule
 
 module DIV(
-    input wire [31:0] dividend,
-    input wire [31:0] divisor,
-    input wire start,
-    input wire clk,
-    input wire reset,
-    output wire [31:0] quotient,
-    output wire [31:0] remainder,
-    output reg busy );
+    input [31:0] dividend,
+    input [31:0] divisor,
+    input start,
+    input clk,
+    input reset,
+    output [31:0] quotient,
+    output [31:0] remainder,
+    output logic busy );
 
 wire ready;
-reg [5:0] count;
-reg [31:00] reg_q;
-reg [31:00] reg_r;
-reg [31:00] reg_b;
+logic [5:0] count;
+logic [31:00] reg_q;
+logic [31:00] reg_r;
+logic [31:00] reg_b;
 wire [31:00] reg_r2;
-reg busy2,r_sign,sign;
+logic busy2, r_sign;
 assign ready=~busy&busy2;
 wire [32:0] sub_add=r_sign?({reg_r,reg_q[31]}+{1'b0,reg_b}):
 							({reg_r,reg_q[31]}-{1'b0,reg_b});
@@ -101,7 +101,8 @@ always @(posedge clk or posedge reset)begin
             r_sign<=sub_add[32];
             reg_q<={reg_q[30:0],~sub_add[32]};
             count<=count+1;
-            if(count==31)busy<=0;
+            if(count==31)
+            	busy<=0;
         end
     end
 end
