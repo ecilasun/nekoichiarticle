@@ -561,7 +561,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="peripheralclock_synth_1" Type="Ft3:Synth" SrcSet="peripheralclock" Part="xc7a100tcsg324-1" ConstrsSet="peripheralclock" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/peripheralclock_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/nekotutorial.srcs/utils_1/imports/peripheralclock_synth_1">
+    <Run Id="peripheralclock_synth_1" Type="Ft3:Synth" SrcSet="peripheralclock" Part="xc7a100tcsg324-1" ConstrsSet="peripheralclock" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/peripheralclock_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/peripheralclock_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
