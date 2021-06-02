@@ -72,6 +72,18 @@ wire busstall;
 wire SWITCH_IRQ;
 wire UART_IRQ;
 
+// Sync to cpu clock
+logic [3:0] switches0;
+logic [3:0] switches1;
+logic [2:0] buttons0;
+logic [2:0] buttons1;
+always @(posedge cpuclock) begin
+	switches0 <= switches;
+	buttons0 <= buttons;
+	switches1 <= switches0;
+	buttons1 <= buttons0;
+end
+
 // Data router
 devicerouter mydevicetree(
 	.uartbase(uartbase),
@@ -95,8 +107,8 @@ devicerouter mydevicetree(
 	.DVI_VS(DVI_VS),
 	.DVI_DE(DVI_DE),
 	.DVI_CLK(DVI_CLK),
-	.switches(switches),
-	.buttons(buttons),
+	.switches(switches1),
+	.buttons(buttons1),
 	.spi_cs_n(spi_cs_n),
 	.spi_mosi(spi_mosi),
 	.spi_miso(spi_miso),
