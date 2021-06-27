@@ -1,0 +1,29 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2.2 (lin64) Build 3118627 Tue Feb  9 05:13:49 MST 2021
+| Date         : Fri Jun 25 21:43:45 2021
+| Host         : encilinux running 64-bit Ubuntu 20.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ddr3cmdfifo'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of ddr3cmdfifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'ddr3cmdfifo'. These changes may impact your design.
+
+
+-Upgraded port 'din' width 65 differs from original width 157
+
+-Upgraded port 'dout' width 65 differs from original width 157
+
+
