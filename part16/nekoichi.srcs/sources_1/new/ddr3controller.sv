@@ -173,7 +173,7 @@ always @ (posedge ui_clk) begin
 					state <= WRITE_DONE;
 					app_en <= 1;
 					app_wdf_wren <= 1;
-					app_addr <= {1'b0, ddr3cmdout[151:128], 3'b000}; // Addresses are in multiples of 16 bits x8 == 128 bits
+					app_addr <= {1'b0, ddr3cmdout[151:128], 3'b000}; // Addresses are in multiples of 16 bits x8 == 128 bits, top bit is supposed to stay zero
 					app_wdf_mask <= 16'h0000; // Always write the full 128bits
 					app_cmd <= CMD_WRITE;
 					app_wdf_data <= ddr3cmdout[127:0]; // 128bit value from cache
@@ -197,7 +197,7 @@ always @ (posedge ui_clk) begin
 			READ: begin
 				if (app_rdy) begin
 					app_en <= 1;
-					app_addr <= {1'b0, ddr3cmdout[151:128], 3'b000};
+					app_addr <= {1'b0, ddr3cmdout[151:128], 3'b000}; // Addresses are in multiples of 16 bits x8 == 128 bits, top bit is supposed to stay zero
 					app_cmd <= CMD_READ;
 					state <= READ_DONE;
 				end
