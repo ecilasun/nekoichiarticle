@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Jul 13 10:16:49 2021
+# Process ID: 1544711
+# Current directory: /home/engin
+# Command line: vivado
+# Log file: /home/engin/vivado.log
+# Journal file: /home/engin/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /media/engin/StorageA/FPGA/nekoni/nekoni.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/engin/StorageC/Xilinx/Vivado/2021.1/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 7607.789 ; gain = 111.551 ; free physical = 12656 ; free virtual = 71615
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 13 10:17:21 2021...

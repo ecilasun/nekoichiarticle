@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Jul 13 10:16:49 2021
+# Process ID: 1544711
+# Current directory: /home/engin
+# Command line: vivado
+# Log file: /home/engin/vivado.log
+# Journal file: /home/engin/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /media/engin/StorageA/FPGA/nekoni/nekoni.xpr
+update_compile_order -fileset sources_1

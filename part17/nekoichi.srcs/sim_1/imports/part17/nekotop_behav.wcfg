@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="nekoichisimtop_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="nekoichisimtop" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="111,999.000000 ns"></ZoomStartTime>
+      <ZoomEndTime time="113,764.000001 ns"></ZoomEndTime>
+      <Cursor1Time time="112,200.000000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="217"></NameColumnWidth>
+      <ValueColumnWidth column_width="97"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="86" />
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/clock">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/enable">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/instruction">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/opcode">
+      <obj_property name="ElementShortName">opcode[4:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/aluop">
+      <obj_property name="ElementShortName">aluop[4:0]</obj_property>
+      <obj_property name="ObjectShortName">aluop[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/rwen">
+      <obj_property name="ElementShortName">rwen</obj_property>
+      <obj_property name="ObjectShortName">rwen</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/fwen">
+      <obj_property name="ElementShortName">fwen</obj_property>
+      <obj_property name="ObjectShortName">fwen</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/func3">
+      <obj_property name="ElementShortName">func3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">func3[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/func7">
+      <obj_property name="ElementShortName">func7[6:0]</obj_property>
+      <obj_property name="ObjectShortName">func7[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/func12">
+      <obj_property name="ElementShortName">func12[11:0]</obj_property>
+      <obj_property name="ObjectShortName">func12[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/rs1">
+      <obj_property name="ElementShortName">rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/rs2">
+      <obj_property name="ElementShortName">rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/rs3">
+      <obj_property name="ElementShortName">rs3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs3[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/rd">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/csrindex">
+      <obj_property name="ElementShortName">csrindex[11:0]</obj_property>
+      <obj_property name="ObjectShortName">csrindex[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/immed">
+      <obj_property name="ElementShortName">immed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">immed[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/selectimmedasrval2">
+      <obj_property name="ElementShortName">selectimmedasrval2</obj_property>
+      <obj_property name="ObjectShortName">selectimmedasrval2</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mydecoder/instrOneHot">
+      <obj_property name="ElementShortName">instrOneHot[17:0]</obj_property>
+      <obj_property name="ObjectShortName">instrOneHot[17:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/myalu/aluout">
+      <obj_property name="ElementShortName">aluout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">aluout[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/myalu/func3">
+      <obj_property name="ElementShortName">func3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">func3[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/myalu/val1">
+      <obj_property name="ElementShortName">val1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">val1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/myalu/val2">
+      <obj_property name="ElementShortName">val2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">val2[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/myalu/aluop">
+      <obj_property name="ElementShortName">aluop[4:0]</obj_property>
+      <obj_property name="ObjectShortName">aluop[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/mybranchalu/branchout">
+      <obj_property name="ElementShortName">branchout</obj_property>
+      <obj_property name="ObjectShortName">branchout</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mybranchalu/val1">
+      <obj_property name="ElementShortName">val1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">val1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mybranchalu/val2">
+      <obj_property name="ElementShortName">val2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">val2[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/mybranchalu/aluop">
+      <obj_property name="ElementShortName">aluop[4:0]</obj_property>
+      <obj_property name="ObjectShortName">aluop[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/calib_done">
+      <obj_property name="ElementShortName">calib_done</obj_property>
+      <obj_property name="ObjectShortName">calib_done</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/state">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/app_addr">
+      <obj_property name="ElementShortName">app_addr[27:0]</obj_property>
+      <obj_property name="ObjectShortName">app_addr[27:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/app_cmd">
+      <obj_property name="ElementShortName">app_cmd[2:0]</obj_property>
+      <obj_property name="ObjectShortName">app_cmd[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/app_en">
+      <obj_property name="ElementShortName">app_en</obj_property>
+      <obj_property name="ObjectShortName">app_en</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/app_rdy">
+      <obj_property name="ElementShortName">app_rdy</obj_property>
+      <obj_property name="ObjectShortName">app_rdy</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/app_wdf_data">
+      <obj_property name="ElementShortName">app_wdf_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">app_wdf_data[127:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/app_wdf_wren">
+      <obj_property name="ElementShortName">app_wdf_wren</obj_property>
+      <obj_property name="ObjectShortName">app_wdf_wren</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/app_wdf_rdy">
+      <obj_property name="ElementShortName">app_wdf_rdy</obj_property>
+      <obj_property name="ObjectShortName">app_wdf_rdy</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/app_rd_data">
+      <obj_property name="ElementShortName">app_rd_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">app_rd_data[127:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/app_rd_data_valid">
+      <obj_property name="ElementShortName">app_rd_data_valid</obj_property>
+      <obj_property name="ObjectShortName">app_rd_data_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/app_wdf_mask">
+      <obj_property name="ElementShortName">app_wdf_mask[15:0]</obj_property>
+      <obj_property name="ObjectShortName">app_wdf_mask[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/app_rd_data_end">
+      <obj_property name="ElementShortName">app_rd_data_end</obj_property>
+      <obj_property name="ObjectShortName">app_rd_data_end</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/ddr3readout">
+      <obj_property name="ElementShortName">ddr3readout[127:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3readout[127:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/ddr3cmdin">
+      <obj_property name="ElementShortName">ddr3cmdin[152:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3cmdin[152:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/ddr3cmdout">
+      <obj_property name="ElementShortName">ddr3cmdout[152:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr3cmdout[152:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/ddr3cmdwe">
+      <obj_property name="ElementShortName">ddr3cmdwe</obj_property>
+      <obj_property name="ObjectShortName">ddr3cmdwe</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/ddr3cmdre">
+      <obj_property name="ElementShortName">ddr3cmdre</obj_property>
+      <obj_property name="ObjectShortName">ddr3cmdre</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/ctag">
+      <obj_property name="ElementShortName">ctag[14:0]</obj_property>
+      <obj_property name="ObjectShortName">ctag[14:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/cline">
+      <obj_property name="ElementShortName">cline[8:0]</obj_property>
+      <obj_property name="ObjectShortName">cline[8:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/coffset">
+      <obj_property name="ElementShortName">coffset[2:0]</obj_property>
+      <obj_property name="ObjectShortName">coffset[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/cwidemask">
+      <obj_property name="ElementShortName">cwidemask[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cwidemask[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/cwidemaskn">
+      <obj_property name="ElementShortName">cwidemaskn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cwidemaskn[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/cachetags">
+      <obj_property name="ElementShortName">cachetags[0:511][15:0]</obj_property>
+      <obj_property name="ObjectShortName">cachetags[0:511][15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/DDR3state">
+      <obj_property name="ElementShortName">DDR3state[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DDR3state[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mydevicetree/ddr3memory/DDR3ready">
+      <obj_property name="ElementShortName">DDR3ready</obj_property>
+      <obj_property name="ObjectShortName">DDR3ready</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider4499" type="divider">
+      <obj_property name="label">cpu</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/clock">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/wallclock">
+      <obj_property name="ElementShortName">wallclock</obj_property>
+      <obj_property name="ObjectShortName">wallclock</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/ifetch">
+      <obj_property name="ElementShortName">ifetch</obj_property>
+      <obj_property name="ObjectShortName">ifetch</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/memaddress">
+      <obj_property name="ElementShortName">memaddress[31:0]</obj_property>
+      <obj_property name="ObjectShortName">memaddress[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/cpudataout">
+      <obj_property name="ElementShortName">cpudataout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cpudataout[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/cpuwriteena">
+      <obj_property name="ElementShortName">cpuwriteena[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cpuwriteena[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/cpudatain">
+      <obj_property name="ElementShortName">cpudatain[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cpudatain[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/busstall">
+      <obj_property name="ElementShortName">busstall</obj_property>
+      <obj_property name="ObjectShortName">busstall</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/cpustate">
+      <obj_property name="ElementShortName">cpustate[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cpustate[11:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/cpureadena">
+      <obj_property name="ElementShortName">cpureadena</obj_property>
+      <obj_property name="ObjectShortName">cpureadena</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/decodeenable">
+      <obj_property name="ElementShortName">decodeenable</obj_property>
+      <obj_property name="ObjectShortName">decodeenable</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/isexecuting">
+      <obj_property name="ElementShortName">isexecuting</obj_property>
+      <obj_property name="ObjectShortName">isexecuting</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/intregisterwriteenable">
+      <obj_property name="ElementShortName">intregisterwriteenable</obj_property>
+      <obj_property name="ObjectShortName">intregisterwriteenable</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/PC">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/nextPC">
+      <obj_property name="ElementShortName">nextPC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">nextPC[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/ebreak">
+      <obj_property name="ElementShortName">ebreak</obj_property>
+      <obj_property name="ObjectShortName">ebreak</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/illegalinstruction">
+      <obj_property name="ElementShortName">illegalinstruction</obj_property>
+      <obj_property name="ObjectShortName">illegalinstruction</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/rdata">
+      <obj_property name="ElementShortName">rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/Wopcode">
+      <obj_property name="ElementShortName">Wopcode[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Wopcode[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/Waluop">
+      <obj_property name="ElementShortName">Waluop[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Waluop[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/Wfunc3">
+      <obj_property name="ElementShortName">Wfunc3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Wfunc3[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/Wfunc7">
+      <obj_property name="ElementShortName">Wfunc7[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Wfunc7[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/Wfunc12">
+      <obj_property name="ElementShortName">Wfunc12[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Wfunc12[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/Wrs1">
+      <obj_property name="ElementShortName">Wrs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Wrs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/Wrs2">
+      <obj_property name="ElementShortName">Wrs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Wrs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/Wrs3">
+      <obj_property name="ElementShortName">Wrs3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Wrs3[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/Wrd">
+      <obj_property name="ElementShortName">Wrd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Wrd[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/Wcsrindex">
+      <obj_property name="ElementShortName">Wcsrindex[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Wcsrindex[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/Wimmed">
+      <obj_property name="ElementShortName">Wimmed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Wimmed[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/nekoichisimtop/simtop/mycpu/Wselectimmedasrval2">
+      <obj_property name="ElementShortName">Wselectimmedasrval2</obj_property>
+      <obj_property name="ObjectShortName">Wselectimmedasrval2</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/nekoichisimtop/simtop/mycpu/myintegerregs/registers">
+      <obj_property name="ElementShortName">registers[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[0:31][31:0]</obj_property>
+   </wvobject>
+</wave_config>
