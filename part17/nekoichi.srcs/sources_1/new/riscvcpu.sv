@@ -398,6 +398,7 @@ logic [4:0] CSRIndextoLinearIndex;
 logic [31:0] CSRReg [0:23];
 
 initial begin
+	CSRReg[`CSR_UNUSED]		= 32'd0;
 	CSRReg[`CSR_FFLAGS]		= 32'd0;
 	CSRReg[`CSR_FRM]		= 32'd0;
 	CSRReg[`CSR_FCSR]		= 32'd0;
@@ -420,7 +421,6 @@ initial begin
 	CSRReg[`CSR_RETILO]		= 32'd0;
 	CSRReg[`CSR_TIMEHI]		= 32'd0;
 	CSRReg[`CSR_RETIHI]		= 32'd0;
-	CSRReg[`CSR_VENDORID]	= 32'd0;
 	CSRReg[`CSR_HARTID]		= 32'd0;
 end
 
@@ -448,8 +448,8 @@ always_comb begin
 		12'hC02: CSRIndextoLinearIndex = `CSR_RETILO;
 		12'hC81: CSRIndextoLinearIndex = `CSR_TIMEHI;
 		12'hC82: CSRIndextoLinearIndex = `CSR_RETIHI;
-		12'hF11: CSRIndextoLinearIndex = `CSR_VENDORID;
 		12'hF14: CSRIndextoLinearIndex = `CSR_HARTID;
+		default: CSRIndextoLinearIndex = `CSR_UNUSED;
 	endcase
 end
 
@@ -464,8 +464,15 @@ end
 // Time is also simple since we know we have 10M ticks per second
 // from which we can derive seconds elapsed
 logic [63:0] internalwallclockcounter = 64'd0;
+logic [63:0] internalwallclockcounter1 = 64'd0;
+logic [63:0] internalwallclockcounter2 = 64'd0;
 always @(posedge wallclock) begin
 	internalwallclockcounter <= internalwallclockcounter + 64'd1;
+end
+// Small adjustment to bring wallclock counter closer to cpu clock domain
+always @(posedge clock) begin
+	internalwallclockcounter1 <= internalwallclockcounter;
+	internalwallclockcounter2 <= internalwallclockcounter1;
 end
 
 logic [63:0] internalretirecounter = 64'd0;
@@ -473,7 +480,7 @@ always @(posedge clock) begin
 	internalretirecounter <= internalretirecounter + {63'd0, cpustate[`CPURETIREINSTRUCTION]};
 end
 
-wire timerinterrupt = CSRReg[`CSR_MIE][7] & (internalwallclockcounter >= {CSRReg[`CSR_TIMECMPHI], CSRReg[`CSR_TIMECMPLO]});
+wire timerinterrupt = CSRReg[`CSR_MIE][7] & (internalwallclockcounter2 >= {CSRReg[`CSR_TIMECMPHI], CSRReg[`CSR_TIMECMPLO]});
 wire externalinterrupt = (CSRReg[`CSR_MIE][11] & IRQ);
 
 // -----------------------------------------------------------------------
@@ -514,7 +521,7 @@ always @(posedge clock) begin
 				decodeenable <= 1'b0;
 				// Update counters
 				{CSRReg[`CSR_CYCLEHI], CSRReg[`CSR_CYCLELO]} <= internalcyclecounter;
-				{CSRReg[`CSR_TIMEHI], CSRReg[`CSR_TIMELO]} <= internalwallclockcounter;
+				{CSRReg[`CSR_TIMEHI], CSRReg[`CSR_TIMELO]} <= internalwallclockcounter2;
 				{CSRReg[`CSR_RETIHI], CSRReg[`CSR_RETILO]} <= internalretirecounter;
 				cpustate[`CPUEXEC] <= 1'b1;
 			end
@@ -787,7 +794,7 @@ always @(posedge clock) begin
 							fdata <= fmulresult;
 						end
 						`FDIV: begin
-							rdata <= fdivresult;
+							fdata <= fdivresult;
 						end
 						`FCVTSW: begin // NOTE: FCVT.S.WU is unsigned version
 							fdata <= Wrs2==5'b00000 ? fi2fresult : fui2fresult; // Result goes to float register (signed int to float)

@@ -41,6 +41,7 @@ logic [2:0] mainstate = MAIN_INIT;
 
 wire calib_done;
 wire [11:0] device_temp;
+logic calib_done1=1'b0, calib_done2=1'b0;
 
 logic [27:0] app_addr = 0;
 logic [2:0]  app_cmd = 0;
@@ -136,6 +137,11 @@ logic [2:0] state = INIT;
 localparam CMD_WRITE = 3'b000;
 localparam CMD_READ = 3'b001;
 
+always @ (posedge ui_clk) begin
+	calib_done1 <= calib_done;
+	calib_done2 <= calib_done1;
+end
+
 // ddr3 driver
 always @ (posedge ui_clk) begin
 	if (ui_clk_sync_rst) begin
@@ -146,7 +152,7 @@ always @ (posedge ui_clk) begin
 	
 		unique case (state)
 			INIT: begin
-				if (calib_done) begin
+				if (calib_done2) begin
 					state <= IDLE;
 				end
 			end

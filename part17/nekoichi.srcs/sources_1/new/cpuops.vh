@@ -76,29 +76,29 @@
 // ==============================================================
 
 // ==================== CSR Register Mapping ====================
-`define CSR_FFLAGS		5'h00
-`define CSR_FRM			5'h01
-`define CSR_FCSR		5'h02
-`define CSR_MSTATUS		5'h03
-`define CSR_MISA		5'h04
-`define CSR_MIE			5'h05
-`define CSR_MTVEC		5'h06
-`define CSR_MSCRATCH	5'h07
-`define CSR_MEPC		5'h08
-`define CSR_MCAUSE		5'h09
-`define CSR_MTVAL		5'h0A
-`define CSR_MIP			5'h0B
-`define CSR_DCSR		5'h0C
-`define CSR_DPC			5'h0D
-`define CSR_TIMECMPLO	5'h0E
-`define CSR_TIMECMPHI	5'h0F
-`define CSR_CYCLELO		5'h10
-`define CSR_CYCLEHI		5'h11
-`define CSR_TIMELO		5'h12
-`define CSR_RETILO		5'h13
-`define CSR_TIMEHI		5'h14
-`define CSR_RETIHI		5'h15
-`define CSR_VENDORID	5'h16
+`define CSR_UNUSED		5'h00
+`define CSR_FFLAGS		5'h01
+`define CSR_FRM			5'h02
+`define CSR_FCSR		5'h03
+`define CSR_MSTATUS		5'h04
+`define CSR_MISA		5'h05
+`define CSR_MIE			5'h06
+`define CSR_MTVEC		5'h07
+`define CSR_MSCRATCH	5'h08
+`define CSR_MEPC		5'h09
+`define CSR_MCAUSE		5'h0A
+`define CSR_MTVAL		5'h0B
+`define CSR_MIP			5'h0C
+`define CSR_DCSR		5'h0D
+`define CSR_DPC			5'h0E
+`define CSR_TIMECMPLO	5'h0F
+`define CSR_TIMECMPHI	5'h10
+`define CSR_CYCLELO		5'h11
+`define CSR_CYCLEHI		5'h12
+`define CSR_TIMELO		5'h13
+`define CSR_RETILO		5'h14
+`define CSR_TIMEHI		5'h15
+`define CSR_RETIHI		5'h16
 `define CSR_HARTID		5'h17
 // ==============================================================
 
